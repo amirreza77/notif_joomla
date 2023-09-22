@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="plugin" version="2.5" group="system" method="upgrade">
+  <name>System - jcnotification</name>
+  <creationDate>21-May-2017</creationDate>
+  <author>Joomla Central Team</author>
+  <authorEmail>info@joomlacentral.com</authorEmail>
+  <authorUrl>http://joomlacentral.com</authorUrl>
+  <copyright>http://joomlacentral.com</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <version>1.0</version>
+
+
+  <description>
+<![CDATA[<body link="#0170CA" alink="#008080" vlink="#0170CA"><div align="center"><table border="1" cellpadding="6" cellspacing="0" id="table1" bordercolor="#e5e5e5" style="font-family: Tahoma" width="90%" dir="rtl"><tr><td rowspan="6" width="202" height="227"><img border="0" src="http://www.topjoomina.ir/do.php?imgf=ea57c490f7bf1.png" width="202" height="227"></td><td colspan="2" bgcolor="#ff6600"><p align="center"><b><a style="text-decoration: none" target="_blank" href="http://www.joomina.ir"><font color="#FFFFFF">وب سایت جومینا</font></a>&nbsp;تقدیم میکند	</b> </p></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">نام افزونه :</font></td><td bgcolor="#f5f5f5"><span lang="fa">پلاگین نمایش هشدار به کاربران - جومینا</span></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">توضیحات:</font></td><td bgcolor="#f5f5f5"><p>این افزونه از طرف سایت جومینا طراحی و منتشر شده است . </p><p>به کمک این افزونه بسیار ارزشمند قادر خواهید بود تا پیغام های خود را به کاربران نمایش دهید </p></td></tr><tr>  <td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF"><span lang="fa">برنامه نویسی شده توسط :</span></font></td><td bgcolor="#f5f5f5"><span style="text-decoration: none"> تیم توسعه افزونه جومینا</span></td></tr><tr><td width="150" bgcolor="#0170ca"><font size="2" color="#FFFFFF">مراجع جوملا<span lang="fa"> ایرانی</span>:</font></td><td bgcolor="#f5f5f5"><p align="center"><a style="text-decoration: none" target="_blank" href="http://www.joomina.ir">مرکز ارائه خدمات به طراحان وب</a><span lang="fa">&nbsp;&nbsp; ا&nbsp;&nbsp; </span>	<a style="text-decoration: none" target="_blank" href="http://forum.joomina.ir">انجمن تخصصی جوملا</a><span lang="fa">&nbsp;&nbsp; ا&nbsp;&nbsp;&nbsp;</span><a style="text-decoration: none" target="_blank" href="http://joominamarket.com">فروشگاه افزونه های تخصصی جوملا</a>&nbsp;&nbsp;<span lang="fa">ا</span>&nbsp;&nbsp;<a style="text-decoration: none" target="_blank" href="http://joominahost.com">هاستینگ منطبق بر جوملا</a>&nbsp;&nbsp; <span lang="fa">ا</span>&nbsp;&nbsp;<a target="_blank" href="http://www.ir-payamak.com/"><span style="text-decoration: none" lang="fa">پیامک ایرانیان</span></a></td></tr></table></div> ]]>
+</description>
+
+  <files folder="site">
+    <filename plugin="jcnotification">jcnotification.php</filename>
+  </files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_system_jcnotification.ini</language>
+		<language tag="fa-IR">fa-IR.plg_system_jcnotification.ini</language>
+	</languages>
+  	<config>
+		<fields name="params">
+			<fieldset name="basic">
+
+			<field name="note1" type="note" class="alert alert-danger" description="JCNOTIFICATIONUSERNAME"
+			label="JCNOTIFICATIONHELP" />
+
+
+				<field
+						name="topmassage"
+						type="text"
+						label="JCNOTIFICATIONTOPMASSAGE"
+				/>
+
+				<field
+					name="jcnotifylogo"
+					type="media"
+					label="JCNOTIFICATIONLOGO"
+					/>
+
+					<field name="showlogo" type="radio" default="1" class="btn-group" label="JCNOTIFICATIONSHOWLOGO" description="">
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field name="note2" type="note" class="alert alert-danger" description="JCNOTIFICATIONLINEBREAK"
+			label="JCNOTIFICATIONHELP" />
+
+					<field
+						name="jcnotifymasege"
+						type="textarea"
+						label="JCNOTIFICATIONMASSAGE"
+						default ="line1/line2"
+					/>
+
+
+			</fieldset>
+		</fields>
+	</config>
+
+</extension>
